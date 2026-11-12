@@ -1,130 +1,51 @@
-<h1>🎬 CINEMANIA — Digital Movie Discovery Platform</h1>
+<div align="center">
 
-<p><em>A modern, responsive movie discovery experience powered by real-time film data.</em></p>
-
-<p>
-  <strong>Cinemania</strong> is a fully responsive, multi-page web application developed as a collaborative
-  group project within the <strong>GoIT Full Stack Developer Program</strong>.
-  The platform allows users to discover trending movies, explore upcoming releases,
-  manage a personal movie library, and view detailed movie information using real-time data from
-  <strong>The Movie Database (TMDB) API</strong>.
-</p>
-
-<hr />
-
-<h2>🌐 Live Demo</h2>
-<p>
-  👉 <a href="https://january-javascript-project.github.io/cinemania/" target="_blank" rel="noopener">
-  GitHub Pages — Cinemania</a>
-</p>
-
-<hr />
-
-<h2>📋 Table of Contents</h2>
-<ol>
-  <li><a href="#about-the-project">About the Project</a></li>
-  <li><a href="#api-integration">API Integration</a></li>
-  <li><a href="#core-features">Core Features (MVP)</a></li>
-  <li><a href="#additional-features">Additional Features</a></li>
-  <li><a href="#technical-requirements">Technical Requirements</a></li>
-  <li><a href="#project-structure">Project Structure</a></li>
-  <li><a href="#technologies-used">Technologies Used</a></li>
-  <li><a href="#team-members">Team Members & Responsibilities</a></li>
-  <li><a href="#screenshots">Screenshots</a></li>
-  <li><a href="#license">License</a></li>
-</ol>
-
-<hr />
-
-<h2 id="about-the-project">📖 About the Project</h2>
-<p>
-  Cinemania simulates a real-world movie discovery platform.
-  Users can browse trending films, search movies by keyword or year,
-  explore upcoming releases, and manage a personalized movie library.
-</p>
+<img src="docs/media/hero.svg" alt="Cinemania — a responsive movie discovery platform built by a team" width="100%">
 
 <p>
-  The application is designed with a <strong>Mobile-First</strong> approach and
-  follows modern frontend best practices including semantic HTML,
-  modular CSS architecture, and asynchronous JavaScript logic.
+  <a href="https://kutluhangil.github.io/Cinemania/"><img alt="Live" src="https://img.shields.io/badge/live-GitHub%20Pages-f87719?style=for-the-badge&labelColor=0e0705"></a>
+  <img alt="TMDB" src="https://img.shields.io/badge/data-TMDB%20API-ff3d3d?style=for-the-badge&labelColor=0e0705">
+  <img alt="Vanilla JS" src="https://img.shields.io/badge/JavaScript-vanilla%20%2B%20Vite-ffc94a?style=for-the-badge&labelColor=0e0705">
+  <img alt="Team" src="https://img.shields.io/badge/GoIT-team%20project-f87719?style=for-the-badge&labelColor=0e0705">
 </p>
 
-<hr />
+<p><em>A responsive movie discovery platform built with vanilla JavaScript on the TMDB API.<br>
+Browse trending and upcoming films, search the catalogue and keep your own library.</em></p>
 
-<h2 id="api-integration">🎞️ API Integration</h2>
-<ul>
-  <li>API Provider: <a href="https://www.themoviedb.org/" target="_blank">TMDB</a></li>
-  <li>Documentation: <a href="https://developer.themoviedb.org/docs" target="_blank">TMDB Docs</a></li>
-</ul>
+<img src="src/images/readme/desktop_home.png" alt="Cinemania home page on desktop" width="100%">
 
-<hr />
+</div>
 
-<h2 id="core-features">✨ Core Features (MVP)</h2>
-<ul>
-  <li>Mobile-first responsive layout (320px / 768px / 1280px)</li>
-  <li>Theme switcher (Dark / Light) with localStorage persistence</li>
-  <li>Hero section with daily trending movie</li>
-  <li>Movie detail modal with trailer support</li>
-  <li>My Library with add/remove logic (localStorage)</li>
-  <li>Footer with team modal (GoIT Students)</li>
-</ul>
+<img src="docs/media/divider.svg" width="100%" alt="">
 
-<hr />
+## Features
 
-<h2 id="additional-features">🚀 Additional Features</h2>
-<ul>
-  <li>Weekly Trends & Upcoming This Month sections</li>
-  <li>Catalog search with year filter</li>
-  <li>Server-side pagination</li>
-  <li>Load more functionality</li>
-  <li>Scroll-to-top button</li>
-  <li>Global loader (spinner) for async requests</li>
-</ul>
+| | |
+|---|---|
+| **Daily trending hero** | The trending film of the day, front and centre. |
+| **Weekly trends and upcoming** | This week's trends and this month's releases. |
+| **Catalogue** | Keyword search with a year filter, server-side pagination and load more. |
+| **Movie modal** | Details and the trailer in a modal. |
+| **My Library** | Add and remove films, kept in localStorage. |
+| **Themes** | Dark and light, remembered between visits. |
+| **Polish** | A global loader, scroll-to-top, retina images, and W3C-valid HTML and CSS. |
+| **Mobile first** | Layouts at 320, 768 and 1280 px. |
 
-<hr />
+<table>
+  <tr>
+    <td width="20%"><img src="src/images/readme/mobile_home.png" alt="Mobile home"></td>
+    <td width="40%"><img src="src/images/readme/tablet_catalog.png" alt="Tablet catalogue"></td>
+    <td width="40%"><img src="src/images/readme/desktop_library.png" alt="Desktop library"></td>
+  </tr>
+</table>
 
-<h2 id="technical-requirements">⚙️ Technical Requirements</h2>
-<ul>
-  <li>Semantic HTML5</li>
-  <li>Modern-normalize integrated</li>
-  <li>Fonts via <code>@font-face</code></li>
-  <li>Optimized retina-ready images</li>
-  <li>All static assets under <code>src/images</code></li>
-  <li>Passed W3C HTML & CSS validation</li>
-  <li>PageSpeed score ≥ 80%</li>
-  <li>No console errors</li>
-  <li>Published on GitHub Pages</li>
-</ul>
+<img src="docs/media/divider.svg" width="100%" alt="">
 
-<hr />
+## Türkçe özet
 
-<h2 id="project-structure">🏗️ Project Structure</h2>
-<pre>
-src/
- ├── css/
- ├── js/
- ├── images/
- │   ├── footer/
- │   └── readme/
- ├── partials/
- ├── index.html
- ├── my-library.html
- └── main.js
-</pre>
+**Cinemania**, TMDB API üzerinde vanilla JavaScript ile ekip olarak geliştirdiğimiz duyarlı bir film keşif platformu. Günün trend filmi, haftalık trendler, bu ayın vizyondakileri, yıl filtreli katalog araması, fragmanlı film detayı ve kişisel kütüphane içeriyor; karanlık ve aydınlık tema var. GoIT Full Stack programında grup projesi olarak hazırlandı; footer ve ekip modalı benim sorumluluğumdaydı. Türkçe, Lehçe ve Rumence README'ler depoda ayrıca duruyor.
 
-<hr />
-
-<h2 id="technologies-used">🛠️ Technologies Used</h2>
-<ul>
-  <li>HTML5</li>
-  <li>CSS3 (Flexbox & Grid)</li>
-  <li>Vanilla JavaScript (ES6+)</li>
-  <li>Vite</li>
-  <li>Git & GitHub</li>
-  <li>TMDB API</li>
-</ul>
-
-<hr />
+<img src="docs/media/divider.svg" width="100%" alt="">
 
 <h2 id="team-members">👥 Geliştirici Ekip & Sorumluluklar</h2>
 
@@ -240,29 +161,18 @@ src/
   </li>
 </ul>
 
-<hr />
+<img src="docs/media/divider.svg" width="100%" alt="">
 
-<h2 id="screenshots">📸 Screenshots</h2>
+## Development
 
-<p><strong>Desktop Views</strong></p>
-<p>
-  <img src="./src/images/readme/desktop_home.png" width="30%" />
-  <img src="./src/images/readme/desktop_catalog.png" width="30%" />
-  <img src="./src/images/readme/desktop_library.png" width="30%" />
-</p>
+```sh
+npm install
+npm run dev      # http://localhost:5173
+npm run build
+```
 
-<p><strong>Tablet & Mobile Views</strong></p>
-<p>
-  <img src="./src/images/readme/tablet_home.png" width="30%" />
-  <img src="./src/images/readme/mobile_home.png" width="30%" />
-  <img src="./src/images/readme/ui_kit.png" width="30%" />
-</p>
-
-<hr />
-
-<h2 id="license">📜 License</h2>
-<p>
-  This project was created for <strong>educational purposes</strong> as part of the GoIT Full Stack Developer program.
-  <br />
-  © 2024 Cinemania — All rights reserved.
-</p>
+<div align="center">
+<br>
+<a href="https://github.com/kutluhangil"><img src="docs/media/signature.svg" width="100%" alt="Team project, contribution by kutluhangil"></a>
+<sub>Fork of <a href="https://github.com/january-javaScript-project/Cinemania">january-javaScript-project/Cinemania</a> · created for educational purposes in the GoIT Full Stack programme.</sub>
+</div>
